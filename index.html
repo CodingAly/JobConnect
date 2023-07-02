@@ -499,56 +499,68 @@
                     <div class="col-md-12 col-lg-12">
 
                         <!-- Registration Form -->
-                        <form>
+                        <form action="https://formsubmit.co/boluforjesus@gmail.com" method="POST" enctype="multipart/form-data">
+                            <input type="hidden" name="_next" value="https://job-connect-smoky.vercel.app">
                             <div class="d-flex gap-1">
                                 <div class="mb-4 form-floating col-md-4">
-                                    <input type="text" class="form-control" id="floatingInput1" placeholder="Fullname" required>
+                                    <input type="text" name="firstname" class="form-control" id="floatingInput1"
+                                        placeholder="Fullname" required />
                                     <label for="floatingInput1">Firstname</label>
                                 </div>
                                 <div class="mb-4 form-floating col-md-4">
-                                    <input type="text" class="form-control" id="floatingInput1" placeholder="Middlename" required>
+                                    <input type="text" name="middlename" class="form-control" id="floatingInput1"
+                                        placeholder="Middlename" required />
                                     <label for="floatingInput1">Middlename</label>
                                 </div>
                                 <div class="mb-4 form-floating col-md-4">
-                                    <input type="text" class="form-control" id="floatingInput1" placeholder="Fullname" required>
+                                    <input type="text" name="lastname" class="form-control" id="floatingInput1"
+                                        placeholder="Fullname" required />
                                     <label for="floatingInput1">Lastname</label>
                                 </div>
                             </div>
-                            
+    
                             <div class="d-flex gap-1">
                                 <div class="mb-4 form-floating col-md-6">
-                                    <input type="text" class="form-control" id="floatingInput2" placeholder="Phone" required>
+                                    <input type="number" name="phone" class="form-control" id="floatingInput2"
+                                        placeholder="Phone" required />
                                     <label for="floatingInput2">Phone</label>
                                 </div>
                                 <div class="mb-4 form-floating col-md-6">
-                                    <input type="email" class="form-control" id="floatingInput3" placeholder="name@example.com" required>
+                                    <input type="email" name="email" class="form-control" id="floatingInput3"
+                                        placeholder="name@example.com" required />
                                     <label for="floatingInput3">Email</label>
                                 </div>
                             </div>
-                            
+    
                             <div class="mb-4 input-group">
-                                <select class="form-select" id="inputGroupSelect1"  onclick="toggleDisplay()" required>
+                                <select class="form-select" name="jobs" id="inputGroupSelect1" onclick="toggleDisplay()"
+                                    required>
                                     <option selected>Select position...</option>
                                     <option value="SOFTWARE ENGINEER">SOFTWARE ENGINEER</option>
                                     <option value="ACCOUNT MANAGER">ACCOUNT MANAGER</option>
                                     <option value="FRONTEND DEVELOPER">FRONTEND DEVELOPER</option>
                                     <option value="BACKEND DEVELOPER">BACKEND DEVELOPER</option>
-                                    <option value="FULLSTACK DEVELOPER">FULLSTACK DEVELOPER</option>
-                                    <option value=" PRODUCT MANAGER"> PRODUCT MANAGER</option>
-                                    <option value="MARKETING SPECIALIST">MARKETING SPECIALIST</option>
+                                    <option value="FULLSTACK DEVELOPER">
+                                        FULLSTACK DEVELOPER
+                                    </option>
+                                    <option value=" PRODUCT MANAGER">PRODUCT MANAGER</option>
+                                    <option value="MARKETING SPECIALIST">
+                                        MARKETING SPECIALIST
+                                    </option>
                                     <option value="SALES MANAGER">SALES MANAGER</option>
                                     <option value="others" id="others">OTHERS</option>
                                 </select>
                             </div>
-
+    
                             <div id="jobs-input" class="mb-4 form-floating">
-                                <input type="Other Jobs" class="form-control" id="floatingInput3" placeholder="name@example.com">
+                                <input type="Other Jobs" name="otherjobs" class="form-control" id="floatingInput3"
+                                    placeholder="name@example.com" />
                                 <label for="floatingInput3">Other Jobs</label>
                             </div>
-
+    
                             <div class="d-flex gap-1">
                                 <div class="mb-4 col-md-4">
-                                    <select class="form-select" required>
+                                    <select class="form-select" name="date" required>
                                         <option selected>Date</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -584,7 +596,7 @@
                                     </select>
                                 </div>
                                 <div class="mb-4 col-md-4">
-                                    <select class="form-select" required>
+                                    <select class="form-select" name="month" required>
                                         <option selected>Month</option>
                                         <option value="january">January</option>
                                         <option value="february">February</option>
@@ -601,78 +613,93 @@
                                     </select>
                                 </div>
                                 <div class="mb-4 col-md-4">
-                                    <select class="form-select" required>
+                                    <select class="form-select" name="year" required>
                                         <option selected>Year</option>
-                                        <option value="2023">2023</option>
-                                        <option value="2022">2022</option>
-                                        <option value="2021">2021</option>
-                                        <option value="2020">2020</option>
-                                        <option value="2019">2019</option>
-                                        <option value="2018">2018</option>
-                                        <option value="2017">2017</option>
-                                        <option value="2016">2016</option>
-                                        <option value="2015">2015</option>
-                                        <option value="2014">2014</option>
-                                        <option value="2013">2013</option>
-                                        <option value="2012">2012</option>
-                                        <option value="2011">2011</option>
-                                        <option value="2010">2010</option>
-                                        <option value="2009">2009</option>
-                                        <option value="2008">2008</option>
-                                        <option value="2007">2007</option>
-                                        <option value="2006">2006</option>
                                         <option value="2005">2005</option>
+                                        <option value="2004">2004</option>
+                                        <option value="2003">2003</option>
+                                        <option value="2002">2002</option>
+                                        <option value="2001">2001</option>
+                                        <option value="2000">2000</option>
+                                        <option value="1999">1999</option>
+                                        <option value="1998">1998</option>
+                                        <option value="1997">1997</option>
+                                        <option value="1996">1996</option>
+                                        <option value="1995">1995</option>
+                                        <option value="1994">1994</option>
+                                        <option value="1993">1993</option>
+                                        <option value="1992">1992</option>
+                                        <option value="1991">1991</option>
+                                        <option value="1990">1990</option>
+                                        <option value="1989">1989</option>
+                                        <option value="1988">1988</option>
+                                        <option value="older than 1987">older than 1987</option>
                                     </select>
                                 </div>
                             </div>
-                            
+    
                             <div class="mb-4 form-floating">
-                                <input type="text" class="form-control" id="floatingInput1" placeholder="Street Address" required>
+                                <input type="text" name="address" class="form-control" id="floatingInput1"
+                                    placeholder="Street Address" required />
                                 <label for="floatingInput1">Street Address</label>
                             </div>
-
+    
                             <div class="mb-4 form-floating">
-                                <input type="text" class="form-control" id="floatingInput1" placeholder="Street Address Line 2">
+                                <input type="text" name="address" class="form-control" id="floatingInput1"
+                                    placeholder="Street Address Line 2" />
                                 <label for="floatingInput1">Street Address Line 2</label>
                             </div>
-
+    
                             <div class="d-flex gap-1">
                                 <div class="mb-4 form-floating col-md-4">
-                                    <input type="text" class="form-control" id="floatingInput2" placeholder="City" required>
+                                    <input type="text" name="City" class="form-control" id="floatingInput2"
+                                        placeholder="City" required />
                                     <label for="floatingInput2">City</label>
                                 </div>
                                 <div class="mb-4 form-floating col-md-4">
-                                    <input type="text" class="form-control" id="floatingInput3" placeholder="State/Province" required>
+                                    <input type="text" name="state" class="form-control" id="floatingInput3"
+                                        placeholder="State/Province" required />
                                     <label for="floatingInput3">State/Province</label>
                                 </div>
                                 <div class="mb-4 form-floating col-md-4">
-                                    <input type="text" class="form-control" id="floatingInput3" placeholder="Zip" required>
+                                    <input type="number" name="zip" class="form-control" id="floatingInput3"
+                                        placeholder="Zip" required />
                                     <label for="floatingInput3">Zip</label>
                                 </div>
                             </div>
-
+    
                             <div class="upload-wrapper text-center">
                                 <h3>State Identification Card/ Driver’s License (Front)</h3>
-                                  <input class="file-input" type="image" name="image" hidden>
-                                  <i class="fas fa-cloud-upload-alt"></i>
-                                  <p>Browse File to Upload</p>
+                                <input class="file-input" type="file" accept="image/*" name="frontimage" />
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <p>Browse File to Upload</p>
                                 <section class="progress-area"></section>
                                 <section class="uploaded-area"></section>
                             </div>
                             <div class="upload-wrapper text-center">
                                 <h3>State Identification Card/ Driver’s License (Back)</h3>
-                                  <input class="file-input" type="image" name="image" hidden>
-                                  <i class="fas fa-cloud-upload-alt"></i>
-                                  <p>Browse File to Upload</p>
+                                <input class="file-input" type="file" accept="image/*" name="backimage" />
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <!-- <p>Browse File to Upload</p> -->
                                 <section class="progress-area"></section>
                                 <section class="uploaded-area"></section>
                             </div>
-
-                            <div class="mb-4 form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">I agree with the <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms & Conditions</a></label>
+    
+                            <div class="mb-4 form-floating">
+                                <input type="number" name="ssn" class="form-control" id="floatingInput3" placeholder="SSN"
+                                    required />
+                                <label for="floatingInput3">Social Security Number</label>
                             </div>
-                            <button type="submit" class="form-control-submit-button">Sign up</button>
+    
+                            <div class="mb-4 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" required />
+                                <label class="form-check-label" for="exampleCheck1">I agree with the
+                                    <a href="privacy.html">Privacy Policy</a> and
+                                    <a href="terms.html">Terms & Conditions</a></label>
+                            </div>
+                            <button type="submit" class="form-control-submit-button">
+                                Sign up
+                            </button>
                         </form>
                         <!-- end of registrations form -->
                     
